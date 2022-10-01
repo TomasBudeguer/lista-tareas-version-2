@@ -1,6 +1,8 @@
 import ListaTarea from "./ListaTarea";
 import { Form, Button } from "react-bootstrap";
 import { useState, useEffect} from "react";
+import Swal from 'sweetalert2/dist/sweetalert2.all'
+
 
 const FormularioTarea = () => {
   // busco los datos del localStorage
@@ -19,10 +21,18 @@ const FormularioTarea = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // no se puede hacer el .push directamente
-    setArregloTarea([...arregloTarea, tarea]);
-    // limpiar el input
-    setTarea('');
+    if(tarea.trim() === ''){
+      Swal.fire({
+        icon: 'error',
+        title: 'No se pudo enviar!',
+        text: 'Completa el campo para poder enviar la tarea',
+      })
+    }else{
+      // no se puede hacer el .push directamente
+      setArregloTarea([...arregloTarea, tarea]);
+      // limpiar el input
+      setTarea('');
+    }
   };
 
   const borrarTarea = (nombre)=>{
