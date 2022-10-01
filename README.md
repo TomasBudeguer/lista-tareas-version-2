@@ -7,4 +7,5 @@ Tomas Agustin Budeguer
 
 1. React-Bootstrap
 1. Bootstrap
+1. Sweet Alert
 
