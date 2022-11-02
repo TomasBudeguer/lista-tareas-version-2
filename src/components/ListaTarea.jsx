@@ -1,15 +1,17 @@
-import ItemTarea from "./ItemTarea";
-import ListGroup from 'react-bootstrap/ListGroup';
+// import ItemTarea from "./ItemTarea";
+// import ListGroup from "react-bootstrap/ListGroup";
+// // import { useEffect } from "react";
+// // import { consultarAPI } from "../helpers/queries";
+// // import { useState } from "react";
 
-const ListaTarea = ({arregloTarea, borrarTarea}) => {
-    return (
-    <ListGroup>
-        {
-            arregloTarea.map((tarea, posicion)=> <ItemTarea key={posicion} nombreTarea={tarea} borrarTarea={borrarTarea}></ItemTarea> )
-        }
+// const ListaTarea = ({ tarea, setTarea }) => {
+//   return (
+//     <ListGroup>
+//       {tarea.map((tarea) => (
+//         <ItemTarea key={tarea._id} tarea={tarea} seTarea={setTarea}></ItemTarea>
+//       ))}
+//     </ListGroup>
+//   );
+// };
 
-    </ListGroup>)
-
-};
-
-export default ListaTarea;
+// export default ListaTarea;
