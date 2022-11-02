@@ -60,7 +60,7 @@ const FormularioTarea = () => {
             })}
           />
           <Form.Text className="text-danger">
-            {errors.nombreProducto?.message}
+            {errors.nombreTarea?.message}
           </Form.Text>
         </Form.Group>
         <Button variant="primary" type="submit" className="mb-3">
