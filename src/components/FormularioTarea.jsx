@@ -67,10 +67,9 @@ const FormularioTarea = () => {
             Enviar
           </Button>
       </Form>
-        {/* <ListaTarea tarea={tarea} setTarea={setTarea}></ListaTarea> */}
         <ListGroup>
       {tarea.map((tarea) => (
-        <ItemTarea key={tarea._id} tarea={tarea} seTarea={setTarea}></ItemTarea>
+        <ItemTarea key={tarea._id} tarea={tarea} setTarea={setTarea}></ItemTarea>
       ))}
     </ListGroup>
     </div>

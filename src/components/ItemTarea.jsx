@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { ListGroup, Button } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { borrarTareaAPI, consultarAPI } from "../helpers/queries";
@@ -41,7 +40,7 @@ const ItemTarea = ({tarea, setTarea}) => {
   };
   return (
     <ListGroup.Item className="d-flex justify-content-between">
-      Tarea:{tarea.nombreTarea}
+      {tarea.nombreTarea}
       <Button variant="danger" onClick={borrarTarea}>Borrar</Button>
     </ListGroup.Item>
   );
